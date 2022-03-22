@@ -16,7 +16,7 @@ Metódusok:
 
 beker(); // Függvény:Visszaadja a beírt szót (tipp)
 
-osszehasonlit(String tipp); //
+osszehasonlit(String tipp); // |PIKSSL
 
 visszajelzes(String tipp); // 
 
