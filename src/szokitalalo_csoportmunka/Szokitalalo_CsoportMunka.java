@@ -1,14 +1,17 @@
 package szokitalalo_csoportmunka;
+
+import java.util.Scanner;
+
 public class Szokitalalo_CsoportMunka {
 
     public static void main(String[] args) {
-        System.out.println("asd");
+        
         start();
       
     }
 
     static void start(){
-        //TESZT
+          //TESZT OSSZEHASONLITAS
 //        String[] tarolo = {"Ló","Tó","Őz"};
 //        String szo1 = "Ló";
 //        String szo2 = "Tó";
@@ -21,12 +24,17 @@ public class Szokitalalo_CsoportMunka {
 //        }
 //        else{
 //            System.out.println("A "+szo2.charAt(szam)+" megyezik");
-//        } //TESZT
+//        } //TESZT OSSZEHASONLITAS
+            //TESZT KIS BETŰ KONVERTALAS
+//        String szo = kisNagy(beker());
+//        System.out.println(szo);
+            //TESZT KIS BETŰ KONVERTALAS
     }
     
     static String beker(){
-
-        return null;
+        Scanner scn = new Scanner(System.in);
+        String tipp = scn.nextLine();
+        return tipp;
 
     }
     static boolean visszajelzes(String szoveg){
@@ -49,7 +57,8 @@ public class Szokitalalo_CsoportMunka {
         }
         return 11;
     }
-    static void kisNagy(String szoveg){
-        
+    static String kisNagy(String szoveg){
+        String kisbetu = szoveg.toLowerCase();
+        return kisbetu;
     }
 }   
