@@ -11,8 +11,8 @@ public class Szokitalalo_CsoportMunka {
     }
 
     static void start(){
+        String[] tarolo = {"Ló","Tó","Őz"};
           //TESZT OSSZEHASONLITAS
-//        String[] tarolo = {"Ló","Tó","Őz"};
 //        String szo1 = "Ló";
 //        String szo2 = "Tó";
 //        System.out.println("asd");
@@ -37,9 +37,9 @@ public class Szokitalalo_CsoportMunka {
         return tipp;
 
     }
-    static boolean visszajelzes(String szoveg){
+    static String visszajelzes(int eredmeny){
         
-        return false;
+        return "";
     }
     static int osszehasonlitas(String szo1, String szo2){
         int i = 0;
