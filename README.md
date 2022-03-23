@@ -25,4 +25,13 @@ szavak / lista amelyben szavakat előre definiálunk.
 tipp / azon szavak melyet a felhasználo ad meg .
 tartalmaz / egy logikai érték mely viszadja igen vagy nemel hogy tartalmaza-e és hogy jo helyen vannak vagy sem.
 
+Felosztás:
+PIKSSL:
+Bekérés/kis-nagybetű alakító megírás és tesztelés
+összehasonlítás metódus megírás és tesztelés
+Mancska:
+visszajelzést biztosító metódus megírás és tesztelés
+metódusok és függvények összeállítása a fő metódusban
+dokibacsi:
+-
 
