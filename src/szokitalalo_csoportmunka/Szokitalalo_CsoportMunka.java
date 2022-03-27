@@ -9,20 +9,17 @@ public class Szokitalalo_CsoportMunka {
        static Random rnd = new Random();
        static int veletlenSzo=rnd.nextInt(3);
     public static void main(String[] args) {
-        
         start();
-      
     }
 
     static void start(){
 
-
        boolean k = true;
        while(k){
        String[] tarolo = {"Ló","Tó","Őz"};
-       String szo1=kisNagy(tarolo[veletlenSzo]) ;
+       String szo1=kisNagy(tarolo[veletlenSzo]); //Van esély rá, hogy kétszer is ugyanazt a szót kapjuk, miután eltaláltuk az előzőt és tovább játszunk. 
        String szo2=kisNagy(beker("Adja meg a tippjét!\n>>"));
-       System.out.println(szo1+" "+ szo2);
+//       System.out.println(szo1+" "+ szo2); //TESZT: az összehasonlitáshoz
        System.out.println(visszajelzes(osszehasonlitas(szo1, szo2), szo1, szo2));
        String valasz = beker("Szeretné újra megpróbálni?\n[1]Igen\n[2]Nem\n>>"); //Az egyszerüség kedvéért tételezzük fel hogy a felhasználó ezen a ponton számot fog megadni az adott opciók közül.
        if(Integer.parseInt(valasz) == 2){
@@ -52,10 +49,9 @@ public class Szokitalalo_CsoportMunka {
     }
     
     static String beker(String szoveg){
-        Scanner scn = new Scanner(System.in, "ISO-8859-1");
+        Scanner scn = new Scanner(System.in, "ISO-8859-1");//Majdnem működött az ékezetekkel, de 2 betűvel gondja akadt, melyet lentebb javitottam
         System.out.print(szoveg);
         String tipp = scn.nextLine();
-           
         return tipp;
 
     }
@@ -63,7 +59,7 @@ public class Szokitalalo_CsoportMunka {
         String kiir="";
         if (eredmeny==10){
              kiir="Eltalálta a szót!";
-             veletlenSzo=rnd.nextInt(3);
+             veletlenSzo=rnd.nextInt(3);//Új szó "generálás"
             }
         else if  (eredmeny == 11){
               kiir="A két szó nem egyezik!";
@@ -89,6 +85,8 @@ public class Szokitalalo_CsoportMunka {
             
 //            kiir="A"+eredmeny+"."+" helyen álló betü helyes";
 //        }
+
+
        return kiir;
         
     }
@@ -112,6 +110,7 @@ public class Szokitalalo_CsoportMunka {
         return 11;
     }
     
+    
 //    static boolean ellenorzes(String adat, int tipus){
 //        if(adat.equals("")){
 //            System.out.println("HIBA:üres mező");
@@ -126,10 +125,12 @@ public class Szokitalalo_CsoportMunka {
 //        
 //        return true;
 //    }
+    
+    
     static String kisNagy(String szoveg){
         String kisbetu = szoveg.toLowerCase();
-                String ki = StringUtils.replace(kisbetu, "õ", "ő");
-                ki = StringUtils.replace(ki, "û", "ű");
+        String ki = StringUtils.replace(kisbetu, "õ", "ő"); //Külsős JAR fájlból való függvény, amely lecserél egy adott karaktert egy másikra
+        ki = StringUtils.replace(ki, "û", "ű");
         return ki;
     }
 }   
