@@ -14,24 +14,27 @@ Szavakat tömbbe
 
 Metódusok:
 
-beker(); // Függvény:Visszaadja a beírt szót (tipp)
-
-osszehasonlit(String tipp); // |PIKSSL
-
-visszajelzes(String tipp); // 
+beker(); // Visszaadja a beírt szót (tipp)
+kisNagy(); // Visszaadja a szöveget kisbetükkel
+osszehasonlit(); // Összehasonlítja a megadott tippet az eltárolt szóval
+visszajelzes(); // Visszajelzést ad a felhasználónak (pl.:"Eltalálta a szó" vagy "a szavak nem egyeznek")
+start(); // A fő metódus, melyben a program darabjai össze vannak rakva
+TÖRÖLT: ellenorzes(); // Végül nem került felhasználásra, de megakadályozta volna, hogy szöveget vagy üres mezőt adjanak meg bekéréskor
 
 Változók:
-szavak / lista amelyben szavakat előre definiálunk.
+tarolo / lista amelyben szavakat előre definiálunk.
 tipp / azon szavak melyet a felhasználo ad meg .
-tartalmaz / egy logikai érték mely viszadja igen vagy nemel hogy tartalmaza-e és hogy jo helyen vannak vagy sem.
+helyen vannak vagy sem.
+veletlenSzo / Random szám, melyet a szavakat tároló listához használtunk
+
 
 Felosztás:
 PIKSSL:
-Bekérés/kis-nagybetű alakító megírás és tesztelés
-összehasonlítás metódus megírás és tesztelés
+Bekérés/kis-nagybetű alakító megírás és tesztelés/
+összehasonlítás metódus megírás és tesztelés/visszajelzéz metódus hiba javítás és tesztelés/program ciklusba helyezése
 Mancska:
-visszajelzést biztosító metódus megírás és tesztelés
+visszajelzést biztosító metódus megírás/
 metódusok és függvények összeállítása a fő metódusban
 dokibacsi:
--
+-R6S
 
